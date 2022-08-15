@@ -1,0 +1,19 @@
+BC Duplication list for Processor 0:
+-------- --------- ----------- ----
+
+At global node 1 (proc node 1) (0.5, -0.5)
+ R_MOMENTUM1     gets   U               (2) from NS 1
+ R_MOMENTUM2     gets   V               (3) from NS 1
+
+At global node 118 (proc node 118) (0.5, 0.5)
+ R_MOMENTUM1     gets   U               (2) from NS 1
+ R_MOMENTUM2     gets   V               (1) from NS 2
+
+At global node 1601 (proc node 1601) (-0.5, -0.5)
+ R_MOMENTUM1     gets   U               (4) from NS 3
+ R_MOMENTUM2     gets   V               (5) from NS 3
+
+At global node 1678 (proc node 1678) (-0.5, 0.5)
+ R_MOMENTUM1     gets   U               (4) from NS 3
+ R_MOMENTUM2     gets   V               (1) from NS 2
+

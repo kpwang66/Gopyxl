@@ -1,0 +1,42 @@
+Change reading input from "input" to "square_input.inp"
+6.0.0
+/************************************************************************ * 
+* Goma - Multiphysics finite element software.                            * 
+* Sandia National Laboratories.                                           * 
+*                                                                         * 
+* Copyright (c) 2014  Sandia Corporation.                                 * 
+*                                                                         * 
+* Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation,  * 
+* the U.S. Government retains certain rights in this software.            * 
+*                                                                         * 
+* This software is distributed under the GNU General Public License.      * 
+\************************************************************************/  
+
+PRS, PAS, RRR, KSC, RAC, TAB, DRN, PLH, DAL, IDG, ACK, ACS, RBS, RRL, MMH, SRS
+HKM, RAR, EDW, PKN, SAR, EMB, KT, DSB, DSH ...
+
+
+
+
+Number of unknowns            = 4562
+
+Number of matrix nonzeroes    = 188484
+
+
+               R e s i d u a l         C o r r e c t i o n
+
+  ToD    itn   L_oo    L_1     L_2     L_oo    L_1     L_2   lis  asm/slv (sec)
+-------- --- ------- ------- ------- ------- ------- ------- --- ---------------
+14:18:51 [0] 6.9e-02 2.6e+00 3.5e-01 1.2e+00 5.1e+02 1.3e+01  1  1.6e-01/1.4e-01
+14:18:51 [1] 1.3e-02 1.2e+00 5.7e-02 3.1e-01 1.9e+02 5.3e+00  1  1.6e-01/1.3e-01
+14:18:51 [2] 1.5e-03 1.9e-01 7.4e-03 3.0e-02 1.9e+01 4.4e-01  1  1.6e-01/1.3e-01
+14:18:51 [3] 1.3e-05 3.5e-03 1.2e-04 8.7e-03 3.5e+00 1.7e-01  1  1.6e-01/1.3e-01
+14:18:52 [4] 2.9e-09 5.8e-07 2.0e-08 2.9e-03 1.2e+00 5.8e-02  1  1.7e-01/1.3e-01
+14:18:52 [5] 5.1e-15 1.1e-13 8.0e-15 7.8e-03 3.1e+00 1.6e-01  1  1.6e-01/1.3e-01
+scaled solution norms   1.271807e+00  1.032404e-01  1.812677e-01 
+
+-done
+
+
+Proc 0 runtime:       0.03 Minutes.
+

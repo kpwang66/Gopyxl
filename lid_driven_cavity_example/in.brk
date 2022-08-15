@@ -1,0 +1,26 @@
+# Material block id
+1
+
+# Number of basic eqn variables
+3
+0 1 1 1
+1 1 1 1
+9 1 1 3
+
+# Interaction Table
+1 1 1 
+1 1 1 
+1 1 1 
+
+# Num of nodes per element
+9
+0 1 
+0 1 
+0 1 
+0 1 
+0 1 
+0 1 
+0 1 
+0 1 
+0 1 9 
+

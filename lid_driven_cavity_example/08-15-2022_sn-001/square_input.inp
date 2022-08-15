@@ -1,0 +1,91 @@
+{include(geometry)}
+
+------------------------------------------------------------
+                 FEM File Specifications
+------------------------------------------------------------
+FEM file                         = square.exoII
+Output EXODUS II file            = out.exoII
+GUESS file                       = contin.dat
+SOLN file                        = soln.dat
+Write intermediate results       = no
+------------------------------------------------------------
+                 General Specifications
+------------------------------------------------------------
+Number of processors             = 1
+Output Level                     = 0 
+Debug                            = 0
+Initial Guess                    = zero 
+------------------------------------------------------------
+                 Time Integration Specifications
+------------------------------------------------------------
+Time integration                 = steady
+------------------------------------------------------------
+                 Solver Specifications
+------------------------------------------------------------
+Solution Algorithm               = umf 
+Number of Newton Iterations      = 100 
+Newton correction factor         = 1 
+Normalized Residual Tolerance    = 1.0e-13
+------------------------------------------------------------
+	Boundary Condition Specifications                 
+------------------------------------------------------------
+
+Number of BC	=	-1
+
+BC	= U NS 2 1.
+BC	= V NS 2 0.
+
+BC      = U NS 1 0.
+BC      = V NS 1 0.
+
+BC	= U NS 3 0.
+BC	= V NS 3 0.
+
+BC	= U NS 4 0.
+BC	= V NS 4 0.
+
+END OF BC
+###########
+----
+Problem Description
+---
+
+Number of Materials = 1
+
+MAT = water    1
+
+	Coordinate System = CARTESIAN
+ 
+	Element Mapping  = isoparametric
+
+	Mesh Motion = ARBITRARY 
+ 
+	Number of bulk species = 0
+
+	Number of EQ   = 3
+	EQ = momentum1  Q2  U1  Q2	  0.   1.   1.   1.   0.   0.
+	EQ = momentum2  Q2  U2  Q2	  0.   1.   1.   1.   0.   0.
+	EQ = continuity	P1  P 	P1   1.                       0.
+                                    div   ms  adv  bnd  dif  src  por
+
+
+Post Processing Specifications
+
+Stream Function = yes
+Streamwise normal stress = no
+Pressure contours = yes
+Second Invarient of Strain = no
+Mesh Dilatation = no
+Navier Stokes Residuals = yes
+Moving Mesh Residuals = yes
+Mass Diffusion Vectors = no
+Mass Fluxlines = no
+Energy Conduction Vectors = no
+Energy Fluxlines = no
+Time Derivatives = no
+Mesh Stress Tensor = no
+Mesh Strain Tensor = no
+Lagrangian Convection = no
+
+
+

@@ -1,0 +1,137 @@
+Command line : /home/kerry/spack/opt/spack/linux-ubuntu20.04-x86_64_v4/gcc-9.4.0/goma-7.1.1-4pmbhwpvn63imkdbalyyxf5u2h4zk2r4/bin/goma -i square_input.inp
+Run Time : Mon Aug 15 10:09:35 2022
+Version : v7.1.1
+
+***FEM File Specifications***
+
+FEM file = square.exoII
+Output EXODUS II file = out.exoII
+GUESS file = contin.dat
+SOLN file = soln.dat
+Write intermediate results = no
+
+***General Specifications***
+
+Output Level = 0
+Debug = 0
+Initial Guess = zero
+
+***Time Integration Specifications*** 
+
+Time integration = steady
+
+***Solver Specifications***
+
+Solution Algorithm = umf
+ (Matrix storage format = msr) (default)
+ (AztecOO Solver = gmres) (default)
+ (Stratimikos File = stratimikos.xml) (default)
+ (Preconditioner = none) (default)
+ (Matrix subdomain solver = ilut) (default)
+ (Matrix Scaling = none) (default)
+ (Matrix residual norm type = r0) (default)
+ (Matrix output type = none) (default)
+ (Matrix factorization reuse = recalc) (default)
+ (Matrix graph fillin = 0) (default)
+ (Matrix factorization overlap = none) (default)
+ (Matrix overlap type = standard) (default)
+ (Matrix auxiliary vector = resid) (default)
+ (Matrix drop tolerance = 0) (default)
+ (Matrix polynomial order = 3) (default)
+ (Matrix reorder = none) (default)
+ (Matrix factorization save = 0) (default)
+ (Matrix ILUT fill factor = 1) (default)
+ (Matrix RILU relax factor = 1) (default)
+ (Matrix BILU Threshold = 0) (default)
+ (Matrix Relative Threshold = 0) (default)
+ (Matrix Absolute Threshold = 0) (default)
+ (Size of Krylov subspace = 30) (default)
+ (Orthogonalization = classic) (default)
+ (Maximum Linear Solve Iterations = 500) (default)
+ (Amesos Solver Package = KLU) (default)
+Number of Newton Iterations = 100
+Newton correction factor = 1
+Normalized Residual Tolerance = 1e-13
+(Pressure Stabilization = NONE) (default)
+(Pressure Stabilization Scaling = 0.0) (default)
+(PSPG Advection Correction = no) (default)
+(DEVSS Traceless Gradient = no) (default)
+(Continuity Stabilization = None) (default)
+(Number of Segregated Subcycles = 1) (default)
+
+***Boundary Condition Specifications***
+
+Number of BC = 8
+BC = U NS 2 1
+BC = V NS 2 0
+BC = U NS 1 0
+BC = V NS 1 0
+BC = U NS 3 0
+BC = V NS 3 0
+BC = U NS 4 0
+BC = V NS 4 0
+END OF BC
+Number of rotation conditions = 0
+
+Problem Description =
+
+Number of Materials = 1
+MAT = water 1
+Coordinate System = CARTESIAN
+Element Mapping = isoparametric
+Mesh Motion = ARBITRARY
+Number of bulk species = 0
+Number of viscoelastic modes = 0
+Number of Matrices = 1
+Number of Matrices = 1
+Number of EQ = 3
+		EQ = momentum1	  Q2      U1   Q2	 0 1 1 1 0 0
+		EQ = momentum2	  Q2      U2   Q2	 0 1 1 1 0 0
+		EQ = continuity	  P1       P   P1	 1 0
+
+END OF MAT
+
+
+Post Processing Specifications =
+
+Stream Function = yes
+Streamwise normal stress = no
+Pressure contours = yes
+Navier Stokes Residuals = yes
+Moving Mesh Residuals = yes
+Mass Diffusion Vectors = no
+Mass Fluxlines = no
+Energy Conduction Vectors = no
+Energy Fluxlines = no
+Time Derivatives = no
+Mesh Stress Tensor = no
+Mesh Strain Tensor = no
+Lagrangian Convection = no
+
+END OF PARTICLES
+
+
+---Compiler defines---
+
+MDE                           = 27
+MAX_PROB_VAR                  = 15
+MAX_CONC                      = 4
+MAX_VARIABLE_TYPES            = 214
+MAX_EXTERNAL_FIELD            = 4
+PARALLEL             Num_Proc = 1
+HAVE_MPI_H                    = yes
+USE_CHEMKIN                   = no
+GOMA_ENABLE_UMFPACK           = yes
+GOMA_ENABLE_SPARSE            = yes
+GOMA_HAVE_BLAS                = yes
+GOMA_HAVE_LAPACK              = yes
+GOMA_ENABLE_ARPACK            = yes
+GOMA_ENABLE_PETSC             = no
+GOMA_ENABLE_OMEGA_H           = yes
+HAVE_PARPACK                  = no
+HAVE_AZTEC                    = yes
+TRILINOS                      = yes
+Pressure Stabilization (PSPG) = no
+Pressure Stabilization (PSPP) = no
+Stabilization Scaling         = 0.000000
+Linear Stability              = no
